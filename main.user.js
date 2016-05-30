@@ -57,7 +57,7 @@ else {
 					var s = xmlhttp.responseText;
 					s = s.replace(/<script src="d\.js" async><\/script>/i, '');
 					s = s.replace(/<\/body>/i, '<script>' + c + '</script></body>');
-					document.open();
+					documenhtt.open();
 					document.write(s);
 					document.close();
 				}
@@ -144,7 +144,7 @@ function doMod() {
 		optionsDiv.children[1].innerHTML += '<div><strong>(X)</strong><label><input type="checkbox" id="optnAutoFire">Auto fire</label></div>';
 		optionsDiv.children[1].innerHTML += '<div><strong>(C)</strong><label><input type="checkbox" id="optn4x3">4:3 aspect</label></div>';
 		optionsDiv.children[1].innerHTML += '<div><strong>(V)</strong><label><input type="checkbox" id="optnDarkTheme">Dark theme</label></div>';
-		optionsDiv.children[2].innerHTML += 'Diep.io Elite Mod: <a style="color: blue; text-decoration: none;" target="_blank" href="https://diepiomods.com">Diepiomods.com</a> - <a style="color: blue; text-decoration: none;" target="_blank" href="http://slithere.com">Slithere.com</a>';
+		optionsDiv.children[2].innerHTML += 'Diep.io Elite Mod: <a style="color: blue; text-decoration: none;" target="_blank" href="http://diepiomods.com">Diepiomods.com</a> - <a style="color: blue; text-decoration: none;" target="_blank" href="http://slithere.com">Slithere.com</a>';
 
 		popupsDiv = document.createElement('div');
 		popupsDiv.id = 'notificationPopups';
