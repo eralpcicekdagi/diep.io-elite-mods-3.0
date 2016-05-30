@@ -6,8 +6,9 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 // ==UserScript==
 // @name        Diep.io Elite Mod by Diepiomods.com
-// @description Auto respawn, auto fire, dark theme, 4:3 aspect, shortcuts and more
+// @description MINIMAP, ZOOM HACK, PLAY WITH FRIENDS, Auto respawn, auto fire, dark theme, 4:3 aspect, shortcuts and more
 // @namespace   Diepiomods.com
+// @authot Diepiomods.com
 // @include     http://diep.io/*
 // @include     https://diep.io/*
 // @run-at      document-start
@@ -57,7 +58,7 @@ else {
 					var s = xmlhttp.responseText;
 					s = s.replace(/<script src="d\.js" async><\/script>/i, '');
 					s = s.replace(/<\/body>/i, '<script>' + c + '</script></body>');
-					documenhtt.open();
+					document.open();
 					document.write(s);
 					document.close();
 				}
